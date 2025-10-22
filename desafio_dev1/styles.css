@@ -172,6 +172,11 @@ p{
 }
 
 @media (max-width: 768px) {
+  header{
+    font-size: 16px;
+    gap: 10px;
+  }
+  
   .home-section {
     flex-direction: column;
     text-align: center;
@@ -189,6 +194,19 @@ p{
     font-size: 24px;
   }
 
+  .soft-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .soft-container span {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+  }
+
   .tec-item {
     width: 100px;
     height: 100px;
@@ -197,5 +215,11 @@ p{
 
   .tec-item i {
     font-size: 40px;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 }
