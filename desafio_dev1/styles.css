@@ -69,7 +69,7 @@ h2{
     margin: 0;
 }
 
-.sobre-section, .soft-section, .tec-section, .contato-section{
+.sobre-section, .love-section, .rec-section, .contato-section{
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
@@ -87,31 +87,27 @@ p{
     margin-bottom: 10px;
 } 
 
-.soft-container{
+.love-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.love-container-list{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: right;
 }
 
-.soft-container span{
-    display: inline-block;
-    background-color: transparent;
-    border: 2px solid #354d35;
-    padding: 10px 18px;
-    margin: 5px;
-    border-radius: 30px;
-    font-size: 20px;
+.love-container-list i{
+    font-size: 10px;
 }
 
-.soft-container span:hover{
-    background-color: #354d35;
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
-
-.tec-container{
+.rec-container{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -120,30 +116,40 @@ p{
     padding-top: 20px;
 }
 
-.tec-item{
+.rec-item{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    height: 120px;
-    width: 120px;
-    padding: 30px;
-    font-size: 20px;
-    background-color: transparent;
-    border: 2px solid #354d35;
-    border-radius: 30px;
+    border: #354d35 2px solid;
+    border-radius: 25px;
+    padding: 13px;
+} 
+
+.rec-item:hover{
+  scale: 1.05;
+  transition: all 0.3s ease
 }
 
-.tec-item:hover{
-    background-color: #354d35;
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
+.rec-container img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+
 }
 
-.tec-item i{
-    font-size: 50px;
+.rec-item span{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 220px;
+}
+
+.rec-item p{
+    margin-top: 10px;
+    font-size: 16px;
+    max-width: 220px;
+    text-align: justify;
 }
 
 .contato-container{
@@ -194,27 +200,32 @@ p{
     font-size: 24px;
   }
 
-  .soft-container {
+  .love-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
 
-  .soft-container span {
+  .love-container span {
     display: flex;
     width: 150px;
     justify-content: center;
   }
 
-  .tec-item {
-    width: 100px;
-    height: 100px;
+  .rec-container  {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .rec-item {
     font-size: 16px;
   }
 
-  .tec-item i {
-    font-size: 40px;
+  .rec-item img{
+    width: 200px;
+    height: 200px;
   }
 
   .contato-container {
